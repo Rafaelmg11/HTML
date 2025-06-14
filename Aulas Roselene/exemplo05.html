@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Tipo - Text </h1>
+    <form method="POST" ACTION="/cgi-bin/post-query">
+        Qual seu primeiro nome?
+        <Input type="text" NAME="primeiro_nome" VALUE="Carlos">
+    </form>
+
+    <h1> Tipo - Password</h1>
+    <form method="POST" ACTION="/cgi-bin/post-query">
+        Informe sua senha de acesso (8 caracteres)
+        <Input type="password" VALUE="xpto" NAME="sua_senha" size="8" maxlength="8">
+    </form>
+
+    <h1> Tipo - Hidden</h1>
+    <form method="POST" ACTION="/cgi-bin/post-query">
+        Você não pode visualizar nada aqui embaixo
+        <Input type="hidden" VALUE="form12" NAME="nome_oculto" size="8" maxlength="8">
+    </form>
+
+    <h1> TextArea   </h1>
+    <form method="POST" ACTION="/cgi-bin/post-query">
+        Por favor, escreva aqui suas sugestões, dúvidas e críticas:
+        <br/>
+        <textarea name="critica" rows="3" cols="40">
+            Gostaria de obter mais informações
+            sobre esse servidor? Gratidão.
+        </textarea>
+    </form>
+
+    <h1> Combo box - Estado </h1>
+    <form method="POST" ACTION="/cgi-bin/post-query">
+        Onde você pretende fazer turismo nas férias?
+        <br/>
+        <select name="lugares_para_ver">
+            <option> Fortaleza </option>
+            <option value="sul"> Florianópolis ou Porto Alegre</option>
+            <option> Rio de Janeiro </option>
+            <option selected> Brasília </option>
+            <option value="amazonia"> Manaus</option>
+        </select>
+    </form>
+
+    <h1> Combo box - Acomodação </h1>
+    <form method="POST" ACTION="/cgi-bin/post-query">
+        Que facilidades de acomodação você deseja? 
+        <br/>
+        <select name="opcional" multiple size="5">
+            <option> Televisão </option>
+            <option value="casal" selected> Cama de Casal </option>
+            <option> Ar Condicionado </option>
+            <option> Fax </option>
+            <option selected> Modem V. 34 </option>
+            <option> Sauna </option>
+            <option> Lavandaria </option>
+            <option> Frigo-Bar </option>
+        </select>
+    </form>
+
+    <h1> Check Box </h1>
+    <form method="POST" ACTION="/cgi-bin/post-query">
+        <input type="checkbox" name="vehicle1" value="Bike"/> I have a bike <br/>
+        <input type="checkbox" name="vehicle2" value="Car"/> I have a car <br/>
+        <input type="checkbox" name="vehicle3" value="Boat" checked/> I have a boat <br/>
+        <input type="submit" value="Submit"/>
+    </form>
+
+    <br/>
+
+    <h1> Radio </h1>
+    <form method="POST" ACTION="/cgi-bin/post-query">
+        <p> Please select your gender: </p>
+        <input type="radio" name="gender" value="Male"/> Male <br/>
+        <input type="radio" name="gender" value="Female"/> Female <br/>
+        <input type="radio" name="gender" value="Outro" checked/> Outro <br/>
+
+        <p> Please select your age: </p>
+        <input type="radio" name="age" value="30"/> 0 - 30 <br/>
+        <input type="radio" name="age" value="60"/> 31 - 60 <br/>
+        <input type="radio" name="age" value="100" checked/> 61 - 100 <br/>
+
+        <input type="submit" value="Submit"/>
+    </form>    
+
+</body>
+</html>
