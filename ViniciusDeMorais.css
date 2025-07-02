@@ -1,0 +1,17 @@
+.center{
+    text-align: center;
+    font-family: Arial;
+}
+
+pre{
+    font-size: 18px;
+    color: blue;
+    font-family: Arial;
+    padding-left:450px;
+}
+
+.Borboleta{
+    position: absolute;
+    left: 700px;
+    top: 250px ;
+}
