@@ -1,0 +1,22 @@
+.cabecalho{
+    background-color: yellow;
+    border: 2px solid black;
+    width: 900px;
+    height: 150px;
+    font-size: 20px;
+}
+
+.corpo{
+    display: flex;
+    height: 400px;
+}
+
+.link{
+    background-color: lightskyblue;
+    width: 30%;
+    border: 2px solid black;
+}
+
+.conteudo_site{
+    
+}
