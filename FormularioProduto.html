@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CRUD PEÇA</title>
+    <link rel="stylesheet" type="text/css" href="FormularioProduto.css" media="all">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="FormularioProduto.js"></script>
 </head>
 <body >
     <center> 
@@ -27,7 +30,7 @@
             
             <tr>
                 <td> Codigo Peça: </td>
-                <td> <input type="text" name = "Entry_CodPeca" > </td>
+                <td> <input type="text" name = "Entry_CodPeca" onkeypress="mascara(this, RemoverLetras)" > </td>
             </tr>
 
 
@@ -36,8 +39,11 @@
                 <td> Tipo de Peça: </td>
 
                 <td> 
-                <select name = "CB_TipoPeca"> 
+                <select name = "CB_TipoPeca" class="Combobox"> 
                     <option> Tipo de Peça</option>
+                    <option> Interior</option>
+                    <option> Motor </option>
+                    <option> Escapamento </option>
                 </select>
                 </td>
             </tr>
@@ -52,7 +58,7 @@
 
             <tr>
                 <td> Quantidade: </td>
-                <td> <input type="text" name="Entry_Quantidade"></td> 
+                <td> <input type="text" name="Entry_Quantidade" onkeypress="mascara(this, RemoverLetras)" ></td> 
             </tr>
 
 
@@ -64,15 +70,19 @@
 
             <tr>
                 <td> Valor: </td>
-                <td> <input type="float" name="Valor"></td> 
+                <td> <input type="text" name="Valor"  onkeypress="mascara(this, Valor)"></td> 
             </tr>
 
 
             <tr>
                 <td> Fornecedor: </td>
                 <td> 
-                    <select name = "CB_Fornecedor" > 
+                    <select name = "CB_Fornecedor" class="Combobox" > 
                         <option> Fornecedor </option>
+                        <option> MercadoLivre - Marcão do Jet </option>
+                        <option> BMW </option>
+                        <option> Shoppe - Hondlox </option>
+
                     </select>
                     </td>
             </tr>
@@ -80,18 +90,33 @@
 
             <tr>
                 <td> Codigo Fornecedor: </td>
-                <td> <input type="text" name="Entry_Fornecedor"></td>            
+                <td> <input type="text" name="Entry_Fornecedor" onkeypress="mascara(this, RemoverLetras)"></td>            
             </tr>
             
+            <tr>
+                <td>
+                    <br>
+                </td>
+
+                <td>
+                    <br>
+                </td>
+            </tr>
 
             <tr>
-                <td> <center><input type="button" name="Cadastrar" value="CADASTRAR"></center></td>
-                <td> <center><input type="button" name="Alterar" value="ALTERAR"></center></td>
+                <td> <center><input type="button" name="Cadastrar" value="CADASTRAR" class="btn btn-primary"></center></td>
+                <td> <center><input type="button" name="Alterar" value="ALTERAR"  class="btn btn-primary"></center></td>
             </tr>
 
             
             <tr>
-                <td colspan="2"> <center> <input type="button" name="Excluir" value="EXCLUIR"> </center> </td>
+                <td colspan="2"> <center> <input type="button" name="Excluir" value="EXCLUIR"  class="btn btn-primary"> </center> </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <br>
+                </td>
             </tr>
 
         </table>
