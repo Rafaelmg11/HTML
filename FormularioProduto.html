@@ -11,113 +11,115 @@
 <body >
     <center> 
         <table> 
-            <tr>
-                <td rowspan="2"> <center> <img src="Image/Logo.jpeg" alt="LogoAutoPeças" height="100" width="150"></center></td>
-                <td> <center> <font size="5"> Cadastro </font> </center></td>
-            </tr>
+            <form method="get" action="Form_Back.php"> 
+                <tr>
+                    <td rowspan="2"> <center> <img src="Image/Logo.jpeg" alt="LogoAutoPeças" height="100" width="150"></center></td>
+                    <td> <center> <font size="5"> Cadastro </font> </center></td>
+                </tr>
 
 
-            <tr>
-                <td> <center> <font size="5"> Peça </font></center></td>
-            </tr>
+                <tr>
+                    <td> <center> <font size="5"> Peça </font></center></td>
+                </tr>
 
 
-            <tr>
-                <td>___________________</td>
-                <td>______________________</td>  
-            </tr>
+                <tr>
+                    <td>___________________</td>
+                    <td>______________________</td>  
+                </tr>
 
-            
-            <tr>
-                <td> Codigo Peça: </td>
-                <td> <input type="text" name = "Entry_CodPeca" placeholder="Digite o código de peça" onkeypress="mascara(this, RemoverLetras)" > </td>
-            </tr>
-
-
-
-            <tr>
-                <td> Tipo de Peça: </td>
-
-                <td> 
-                <select name = "CB_TipoPeca" class="Combobox"> 
-                    <option> Tipo de Peça</option>
-                    <option> Interior</option>
-                    <option> Motor </option>
-                    <option> Escapamento </option>
-                </select>
-                </td>
-            </tr>
+                
+                <tr>
+                    <td> Codigo Peça: </td>
+                    <td> <input type="text" name = "Entry_CodPeca" placeholder="Digite o código de peça" onkeypress="mascara(this, RemoverLetras)" > </td>
+                </tr>
 
 
 
-            <tr>
-                <td> Descrição </td>
-                <td> <input type="text" name = "Entry_Descricaco" placeholder="Digite a descrição da peça"> </td>
-            </tr>
+                <tr>
+                    <td> Tipo de Peça: </td>
 
-
-            <tr>
-                <td> Quantidade: </td>
-                <td> <input type="text" name="Entry_Quantidade" onkeypress="mascara(this, RemoverLetras)" placeholder="Digite a quantidade da peça" ></td> 
-            </tr>
-
-
-            <tr>
-                <td> Lote: </td>
-                <td> <input type="text" name="Entry_Lote" placeholder="Digite o lote da peça"></td> 
-            </tr>
-
-
-            <tr>
-                <td> Valor: </td>
-                <td> <input type="text" name="Valor"  onkeypress="mascara(this, Valor)" placeholder="Digite o valor da peça"></td> 
-            </tr>
-
-
-            <tr>
-                <td> Fornecedor: </td>
-                <td> 
-                    <select name = "CB_Fornecedor" class="Combobox" > 
-                        <option> Fornecedor </option>
-                        <option> MercadoLivre - Marcão do Jet </option>
-                        <option> BMW </option>
-                        <option> Shoppe - Hondlox </option>
-
+                    <td> 
+                    <select name = "CB_TipoPeca" class="Combobox"> 
+                        <option> Tipo de Peça</option>
+                        <option> Interior</option>
+                        <option> Motor </option>
+                        <option> Escapamento </option>
                     </select>
                     </td>
-            </tr>
+                </tr>
 
 
-            <tr>
-                <td> Codigo Fornecedor: </td>
-                <td> <input type="text" name="Entry_Fornecedor" onkeypress="mascara(this, RemoverLetras)" placeholder="Código do fornecedor"></td>            
-            </tr>
-            
-            <tr>
-                <td>
-                    <br>
-                </td>
 
-                <td>
-                    <br>
-                </td>
-            </tr>
+                <tr>
+                    <td> Descrição </td>
+                    <td> <input type="text" name = "Entry_Descricaco" placeholder="Digite a descrição da peça"> </td>
+                </tr>
 
-            <tr>
-                <td> <center><input type="button" name="Cadastrar" value="CADASTRAR" class="btn btn-primary"></center></td>
-                <td> <center><input type="button" name="Alterar" value="ALTERAR"  class="btn btn-primary"></center></td>
-            </tr>
 
-            
-            <tr>
-                <td colspan="2"> <center> <input type="button" name="Excluir" value="EXCLUIR"  class="btn btn-primary"> </center> </td>
-            </tr>
+                <tr>
+                    <td> Quantidade: </td>
+                    <td> <input type="text" name="Entry_Quantidade" onkeypress="mascara(this, RemoverLetras)" placeholder="Digite a quantidade da peça" ></td> 
+                </tr>
 
-            <tr>
-                <td>
-                    <br>
-                </td>
-            </tr>
+
+                <tr>
+                    <td> Lote: </td>
+                    <td> <input type="text" name="Entry_Lote" placeholder="Digite o lote da peça"></td> 
+                </tr>
+
+
+                <tr>
+                    <td> Valor: </td>
+                    <td> <input type="text" name="Entry_Valor"  onkeypress="mascara(this, Valor)" placeholder="Digite o valor da peça"></td> 
+                </tr>
+
+
+                <tr>
+                    <td> Fornecedor: </td>
+                    <td> 
+                        <select name = "CB_Fornecedor" class="Combobox" > 
+                            <option> Fornecedor </option>
+                            <option> MercadoLivre - Marcão do Jet </option>
+                            <option> BMW </option>
+                            <option> Shoppe - Hondlox </option>
+
+                        </select>
+                        </td>
+                </tr>
+
+
+                <tr>
+                    <td> Codigo Fornecedor: </td>
+                    <td> <input type="text" name="Entry_CodFornecedor" onkeypress="mascara(this, RemoverLetras)" placeholder="Código do fornecedor"></td>            
+                </tr>
+                
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <center><input type="submit" name="Cadastrar" value="CADASTRAR" class="btn btn-primary"></center></td>
+                    <td> <center><input type="button" name="Alterar" value="ALTERAR"  class="btn btn-primary"></center></td>
+                </tr>
+
+                
+                <tr>
+                    <td colspan="2"> <center> <input type="button" name="Excluir" value="EXCLUIR"  class="btn btn-primary"> </center> </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+            </form>
 
         </table>
 
